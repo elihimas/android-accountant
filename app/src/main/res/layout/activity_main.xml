@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <Button
+        android:id="@+id/btConsolidate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_quantity_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@id/btConsolidate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <GridLayout
+        android:id="@+id/buttonsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:columnCount="@integer/column_count"
+        android:padding="15dp"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_max="700dp">
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14" />
+
+        <Button
+            style="@style/GridButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15" />
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvItems"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/buttonsContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btConsolidate"
+        tools:itemCount="20"
+        tools:listitem="@layout/row_couting_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

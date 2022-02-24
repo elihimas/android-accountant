@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Accountant</string>
+
+    <string name="bt_update">Consolidate</string>
+    <string name="et_quantity_hint">Quantity</string>
+    <string name="bt_remove">remove</string>
+</resources>
