@@ -3,10 +3,10 @@ An Android app to count items
 
 ### Screenshots: ###
 
-![phone_empty](https://github.com/elihimas/android-accountant/blob/master/screenshots/phone_empty.png)
-![phone_filled](https://github.com/elihimas/android-accountant/blob/master/screenshots/phone_filled.png)
-![phone_help](https://github.com/elihimas/android-accountant/blob/master/screenshots/phone_help.png)
-![tablet](https://github.com/elihimas/android-accountant/blob/master/screenshots/tablet.png)
+![Phone empty](https://github.com/elihimas/android-accountant/blob/master/screenshots/phone_empty.png)
+![Phone filled](https://github.com/elihimas/android-accountant/blob/master/screenshots/phone_filled.png)
+![Phone help](https://github.com/elihimas/android-accountant/blob/master/screenshots/phone_help.png)
+![Tablet empty](https://github.com/elihimas/android-accountant/blob/master/screenshots/tablet.png)
 
 
 ### Technologies used: ###
