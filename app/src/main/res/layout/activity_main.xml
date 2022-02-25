@@ -14,16 +14,45 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/btAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btConsolidate" />
+
+    <TextView
+        android:id="@+id/tvLabelTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/label_total"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/btConsolidate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btConsolidate" />
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/btConsolidate"
+        app:layout_constraintStart_toEndOf="@id/tvLabelTotal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1200" />
+
     <EditText
         android:id="@+id/etQuantity"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/et_quantity_hint"
         android:inputType="number"
-        app:layout_constraintEnd_toStartOf="@id/btConsolidate"
+        app:layout_constraintEnd_toStartOf="@id/btAdd"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toBottomOf="@id/btConsolidate" />
 
     <GridLayout
         android:id="@+id/buttonsContainer"
@@ -136,7 +165,7 @@
         app:layout_constraintBottom_toTopOf="@id/buttonsContainer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btConsolidate"
+        app:layout_constraintTop_toBottomOf="@id/btAdd"
         tools:itemCount="20"
         tools:listitem="@layout/row_couting_item" />
 

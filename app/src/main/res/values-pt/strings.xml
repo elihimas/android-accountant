@@ -1,7 +1,14 @@
 <resources>
     <string name="app_name">Contador</string>
 
-    <string name="bt_update">Consolidar</string>
     <string name="et_quantity_hint">Quantidade</string>
+    <string name="bt_add">adicionar</string>
     <string name="bt_remove">remover</string>
+    <string name="bt_update">consolidar</string>
+
+    <string name="label_total">Total:</string>
+
+    <string name="menu_help">Ajuda</string>
+
+    <string name="help_text">Este aplicativo te ajuda a contar coisas\n\nO botão consolidar subistituirá todos os valores por um único valor.</string>
 </resources>

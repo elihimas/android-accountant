@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">Accountant</string>
+    <string name="ok" translatable="false">Ok</string>
 
-    <string name="bt_update">Consolidate</string>
     <string name="et_quantity_hint">Quantity</string>
+    <string name="bt_add">add</string>
     <string name="bt_remove">remove</string>
+    <string name="bt_update">consolidate</string>
+
+    <string name="label_total">Total:</string>
+
+    <string name="menu_help">Help</string>
+
+    <string name="help_text">This app helps you to count things\n\nThe consolidate button will substitute all entries with one entry.</string>
 </resources>
